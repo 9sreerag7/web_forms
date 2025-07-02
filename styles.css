@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #f0f0f0;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1); /* glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(15px);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+input,
+select {
+  padding: 12px;
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1em;
+  transition: background 0.3s, border 0.3s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #4caf50;
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+select,
+input[type="date"] {
+  appearance: none; /* remove default styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 12px;
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s;
+}
+
+select:focus,
+input[type="date"]:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #4caf50;
+}
